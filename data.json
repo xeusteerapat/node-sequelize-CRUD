@@ -1,0 +1,29 @@
+[
+  {
+    "title": "JS: Node Express - Basic",
+    "description": "#1 description"
+  },
+  {
+    "title": "Python: Machine Learning",
+    "description": "#2 description"
+  },
+  {
+    "title": "Rust: Fullstack Rust",
+    "description": "#3 description"
+  },
+  {
+    "title": "Go: Web development with Go",
+    "description": "#4 description"
+  },
+  {
+    "title": "Elixir: Elixir with Pheonix",
+    "description": "#5 description"
+  },
+  {
+    "title": "Typescript: The new way to JavaScript",
+    "description": "#6 description"
+  },
+  {
+    "mysql": "// mysql -u root -p "
+  }
+]
