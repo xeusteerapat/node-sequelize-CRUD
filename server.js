@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const Tutorial = require('./controller/tutorial.controller.js');
 const app = express();
 
 const corsOptions = {
@@ -15,8 +16,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const db = require('./models/index.js');
 db.sequelize.sync();
 
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
 app.get('/', (req, res) => {
-  res.send({ message: 'Welcome to my app' });
+  res.render('index');
+});
+
+app.post('/', (req, res) => {
+  console.log(req.body);
+  Tutorial.create(req, res);
 });
 
 require('./routes/tutorial.routes.js')(app);
